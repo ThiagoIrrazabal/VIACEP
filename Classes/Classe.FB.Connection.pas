@@ -7,7 +7,8 @@ uses
   FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async,
   FireDAC.Phys, FireDAC.Phys.MySQL, FireDAC.Phys.MySQLDef, FireDAC.VCLUI.Wait,
   FireDAC.Phys.FBDef, FireDAC.Phys.IBBase, FireDAC.Phys.FB, Data.DB,
-  FireDAC.Comp.Client, Classe.SmartPointer, System.SysUtils, System.IniFiles;
+  FireDAC.Comp.Client, Classe.SmartPointer, System.SysUtils, System.IniFiles,
+  System.IOUtils;
 
 type
   IFBConnection = Interface(IInterface)
@@ -79,7 +80,7 @@ begin
   Porta(lFBConnection.ReadString('PORTA', 'porta', EmptyStr));
   UserName(lFBConnection.ReadString('USERNAME', 'username', EmptyStr));
   Password(lFBConnection.ReadString('PASSWORD', 'password', EmptyStr));
-  DataBase(Copy(ExtractFilePath(ParamStr(0)), 1, Pos('ProjetoCEP_New', ExtractFilePath(ParamStr(0))) - 1) + FDataBase);
+  DataBase(Copy(ExtractFileDir(ParamStr(0)), 1, LastDelimiter(PathDelim, ExtractFileDir(ParamStr(0))) - 1) + PathDelim + 'Banco' + PathDelim + FDataBase);
 end;
 
 function TFBConnection.DataBase: string;
@@ -108,9 +109,7 @@ begin
   Result := Self;
   FBConnection := TSmartPointer<TFDConnection>.Create(TFDConnection.Create(nil));
   FDPhysFBDriverLink := TSmartPointer<TFDPhysFBDriverLink>.Create(TFDPhysFBDriverLink.Create(nil));
-  FDPhysFBDriverLink.VendorLib :=
-    Copy(ExtractFilePath(ParamStr(0)), 1, Pos('ProjetoCEP_New', ExtractFilePath(ParamStr(0))) - 1) +
-    'ProjetoCEP_New\Bin\fbclient.dll';
+  FDPhysFBDriverLink.VendorLib := ExtractFilePath(ParamStr(0)) + 'fbclient.dll';
   FBConnection.Params.Values['DriverID'] := 'FB';
   FBConnection.Params.Values['Server'] := HostName;
   FBConnection.Params.Values['Port'] := Porta;
