@@ -77,6 +77,7 @@ end;
 
 procedure TFormRegisteredZIPCode.FormCreate(Sender: TObject);
 begin
+  DoNothing;
   InitiDataControls;
   InitiExcluirDraw;
   InitirExcluirClick;
