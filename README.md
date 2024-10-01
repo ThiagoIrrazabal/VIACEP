@@ -1,6 +1,12 @@
 # VIACEP (Delphi 11)
 Projeto de Integração FireBird e API de CEP para Gestão de Logradouros
 
+![GitHub Contributors](https://img.shields.io/github/contributors/ThiagoIrrazabal/VIACEP)
+![GitHub Forks](https://img.shields.io/github/forks/ThiagoIrrazabal/VIACEP?style=social)
+![GitHub Issues](https://img.shields.io/github/issues/ThiagoIrrazabal/VIACEP)
+![GitHub Stars](https://img.shields.io/github/stars/ThiagoIrrazabal/VIACEP?style=social)
+![GitHub License](https://img.shields.io/github/license/ThiagoIrrazabal/VIACEP)
+
 # Projeto de Integração FireBird e API de CEP para Gestão de Logradouros
 
 ## Descrição
@@ -26,6 +32,7 @@ Este projeto visa integrar uma aplicação com um banco de dados **FireBird** e 
 - **Componentes**: 
   - `TFDQuery` para manipulação de dados
   - `IXMLDocument` para tratamento de XML
+  - `TJSONObject` para tratamento de JSON 
 
 ## Instalação
 
@@ -37,4 +44,4 @@ Este projeto visa integrar uma aplicação com um banco de dados **FireBird** e 
 ### Passos para Configuração
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-projeto.git
+   git clone https://github.com/ThiagoIrrazabal/VIACEP.git
