@@ -1,11 +1,11 @@
 # VIACEP (Delphi 11)
-Projeto de Integração FireBird e API de CEP para Gestão de Logradouros
+Projeto de Integração FireBird e API de CEP para Gestão de Logradouros (Teste aplicado em entrevista)
 
-![GitHub Contributors](https://img.shields.io/github/contributors/ThiagoIrrazabal/VIACEP)
-![GitHub Forks](https://img.shields.io/github/forks/ThiagoIrrazabal/VIACEP?style=social)
-![GitHub Issues](https://img.shields.io/github/issues/ThiagoIrrazabal/VIACEP)
-![GitHub Stars](https://img.shields.io/github/stars/ThiagoIrrazabal/VIACEP?style=social)
-![GitHub License](https://img.shields.io/github/license/ThiagoIrrazabal/VIACEP)
+[![GitHub Contributors](https://img.shields.io/github/contributors/ThiagoIrrazabal/VIACEP)](https://github.com/ThiagoIrrazabal/VIACEP/graphs/contributors)
+[![GitHub Forks](https://img.shields.io/github/forks/ThiagoIrrazabal/VIACEP?style=social)](https://github.com/ThiagoIrrazabal/VIACEP/network/members)
+[![GitHub Issues](https://img.shields.io/github/issues/ThiagoIrrazabal/VIACEP)](https://github.com/ThiagoIrrazabal/VIACEP/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/ThiagoIrrazabal/VIACEP?style=social)](https://github.com/ThiagoIrrazabal/VIACEP/stargazers)
+[![GitHub License](https://img.shields.io/github/license/ThiagoIrrazabal/VIACEP)](https://github.com/ThiagoIrrazabal/VIACEP/blob/main/LICENSE)
 
 # Projeto de Integração FireBird e API de CEP para Gestão de Logradouros
 
